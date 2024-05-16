@@ -8,7 +8,9 @@ const Profile = () => {
   return (
     <div>
       <h2>{username}'s Profile</h2>
+      <br /><br />
       <p>This is the {username}'s profile page.</p>
+      <br /><br />
     </div>
   );
 };
