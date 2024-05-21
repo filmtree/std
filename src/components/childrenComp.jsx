@@ -1,6 +1,6 @@
 import React from 'react';
 
-const childrenComp = ({ children }) => {
+const ChildrenComp = ({ children }) => {
   return (
     <div>
       {/* slot */}
@@ -9,4 +9,4 @@ const childrenComp = ({ children }) => {
   );
 };
 
-export default childrenComp;
+export default ChildrenComp;

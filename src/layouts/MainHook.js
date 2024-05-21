@@ -7,6 +7,8 @@ import Contact from "../pages/Contact";
 import Location from "../pages/Location";
 import Profiles from "../pages/Profiles";
 import Profile from "../pages/Profile";
+import Modal from "../userhookmodal/Modal";
+import ModalMulti from "../userhookmodal/ModalMulti";
 
 const Main = () => {
   const routes = useRoutes([
@@ -42,6 +44,15 @@ const Main = () => {
           element: <div>유저를 선택해주세요.</div>
         },
       ],
+    },
+    // 사용자 Hook
+    {
+      path: "/modal",
+      element: <Modal />
+    },
+    {
+      path: "/modalmulti",
+      element: <ModalMulti />
     }
   ]);
 

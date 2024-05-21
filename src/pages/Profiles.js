@@ -1,6 +1,7 @@
 import React from "react";
-import {Link, Routes, Route, Outlet } from 'react-router-dom'
-import Profile from "./Profile";
+import {Link, Outlet } from 'react-router-dom'
+// import {Link, Routes, Route, Outlet } from 'react-router-dom'
+// import Profile from "./Profile";
 
 const Profiles = () => {
     return (

@@ -1,15 +1,15 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const defaultProps = ({ name }) => {
+const DefaultProps = ({ name }) => {
 
   /* Pros 기본값 설정 */
-  defaultProps.defaultProps = {
+  DefaultProps.defaultProps = {
     name : 'default',
   }
 
   /* Prop Type 설정 */
-  defaultProps.propTypes = {
+  DefaultProps.propTypes = {
     name: PropTypes.string.isRequired // isRequired - 필수 입력
   };
 
@@ -21,4 +21,4 @@ const defaultProps = ({ name }) => {
   );
 };
 
-export default defaultProps;
+export default DefaultProps;
