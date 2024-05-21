@@ -1,5 +1,5 @@
 import React from 'react';
-import ModalLayout from './ModalLayout';
+import ModalLayout from './ModalLayoutFade';
 import useModal from './UseModal';
 
 const Modal = () => {
