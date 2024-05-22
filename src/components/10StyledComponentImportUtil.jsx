@@ -1,21 +1,5 @@
 import styled, { css } from "styled-components";
-
-const sizes = {
-  desktop: 1024,
-  table: 768
-};
-
-// 위에 있는 size 객체에 따라 자동으로 media 쿼리 함수를 만들어줍니다.
-  /* 미디어 쿼리 유틸함수 */
-const media = Object.keys(sizes).reduce((acc, label) => {
-  acc[label] = (...args) => css`
-    @media (max-width: ${sizes[label] / 16}em){
-      ${css(...args)};
-    }
-  `;
-  return acc;
-}, {});
-
+import media from "./10StyledComponentHelper"
 
 const Box = styled.div`
   /* props로 넣어 준 값을 직접 전달해 줄 수 있습니다. */
@@ -36,8 +20,17 @@ const Box = styled.div`
   }
 
   /* 미디어 쿼리 유틸함수 사용한 적용 */
-  ${media.desktop`margin: 10px`}
-  ${media.tablet`margin: 20px`}
+  ${media.small`
+    font-size: 14px;
+  `}
+
+  ${media.medium`
+    font-size: 18px;
+  `}
+
+  ${media.large`
+    font-size: 20px;
+  `}
 `;
 
 const Button = styled.button`
