@@ -10,6 +10,7 @@ import Profile from "../pages/Profile";
 import Modal from "../userhookmodal/Modal";
 import ModalMulti from "../userhookmodal/ModalMulti";
 import CSSModule from "../assets/css/CSSModule";
+import StyledComponent from "../components/10StyledComponent";
 
 const Main = () => {
   const routes = useRoutes([
@@ -58,6 +59,10 @@ const Main = () => {
     {
       path: "/cssmodule",
       element: <CSSModule />
+    },
+    {
+      path: "/styledcomponent",
+      element: <StyledComponent />
     }
   ]);
 
