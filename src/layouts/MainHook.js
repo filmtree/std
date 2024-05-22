@@ -9,6 +9,7 @@ import Profiles from "../pages/Profiles";
 import Profile from "../pages/Profile";
 import Modal from "../userhookmodal/Modal";
 import ModalMulti from "../userhookmodal/ModalMulti";
+import CSSModule from "../assets/css/CSSModule";
 
 const Main = () => {
   const routes = useRoutes([
@@ -53,6 +54,10 @@ const Main = () => {
     {
       path: "/modalmulti",
       element: <ModalMulti />
+    },
+    {
+      path: "/cssmodule",
+      element: <CSSModule />
     }
   ]);
 
