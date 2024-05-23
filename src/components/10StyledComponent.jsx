@@ -2,7 +2,7 @@ import styled, { css } from "styled-components";
 
 const sizes = {
   desktop: 1024,
-  table: 768
+  tablet: 768
 };
 
 // 위에 있는 size 객체에 따라 자동으로 media 쿼리 함수를 만들어줍니다.
