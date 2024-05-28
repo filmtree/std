@@ -11,6 +11,8 @@ import Modal from "../userhookmodal/Modal";
 import ModalMulti from "../userhookmodal/ModalMulti";
 import CSSModule from "../assets/css/CSSModule";
 import StyledComponent from "../components/10StyledComponent";
+import NotFound from "../routes/NotFound";
+
 
 const Main = () => {
   const routes = useRoutes([
@@ -63,6 +65,10 @@ const Main = () => {
     {
       path: "/styledcomponent",
       element: <StyledComponent />
+    },
+    {
+      path: "*",
+      element: <NotFound />
     }
   ]);
 
