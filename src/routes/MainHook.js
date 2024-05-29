@@ -7,11 +7,12 @@ import Contact from "../pages/Contact";
 import Location from "../pages/Location";
 import Profiles from "../pages/Profiles";
 import Profile from "../pages/Profile";
-import Modal from "../userhookmodal/Modal";
-import ModalMulti from "../userhookmodal/ModalMulti";
+import Modal from "../ui/userhookmodal/Modal";
+import ModalMulti from "../ui/userhookmodal/ModalMulti";
 import CSSModule from "../assets/css/CSSModule";
 import StyledComponent from "../components/10StyledComponent";
 import NotFound from "../routes/NotFound";
+import ColorPage from "../contexts/ColorPage";
 
 
 const Main = () => {
@@ -65,6 +66,10 @@ const Main = () => {
     {
       path: "/styledcomponent",
       element: <StyledComponent />
+    },
+    {
+      path: "/colorpage",
+      element: <ColorPage />
     },
     {
       path: "*",

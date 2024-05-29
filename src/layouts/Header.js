@@ -14,6 +14,7 @@ const Header = () => {
           <li><NavLink to="/modal">Modal</NavLink></li>
           <li><NavLink to="/modalmulti">ModalMulti</NavLink></li>
           <li><NavLink to="/cssmodule">CSSModule</NavLink></li>
+          <li><NavLink to="/colorpage">Context ColorPage</NavLink></li>
         </ul>
       </nav>
     </header>

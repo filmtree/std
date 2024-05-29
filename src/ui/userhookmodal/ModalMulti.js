@@ -1,6 +1,6 @@
 import React from 'react';
 import ModalLayout from './ModalLayout';
-import useModal from './UseModal';
+import useModal from '../../lib/UseModal';
 
 const Modal = () => {
 

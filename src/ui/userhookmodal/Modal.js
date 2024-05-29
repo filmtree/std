@@ -1,6 +1,6 @@
 import React from 'react';
 import ModalLayout from './ModalLayoutFade';
-import useModal from './UseModal';
+import useModal from '../../lib/UseModal';
 
 const Modal = () => {
   const { isOpen, openModal, closeModal } = useModal();
