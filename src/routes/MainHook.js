@@ -13,7 +13,7 @@ import CSSModule from "../assets/css/CSSModule";
 import StyledComponent from "../components/10StyledComponent";
 import NotFound from "../routes/NotFound";
 import ColorPage from "../contexts/ColorPage";
-
+import Tooltip from "../ui/usetooltip/TooltipApp"
 
 const Main = () => {
   const routes = useRoutes([
@@ -70,6 +70,11 @@ const Main = () => {
     {
       path: "/colorpage",
       element: <ColorPage />
+    },
+    {
+      path: "/tooltip",
+      name: "tooltip",
+      element: <Tooltip />
     },
     {
       path: "*",

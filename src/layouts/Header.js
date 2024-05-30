@@ -13,6 +13,7 @@ const Header = () => {
           <li><NavLink to="/profiles">Profiles</NavLink></li>
           <li><NavLink to="/modal">Modal</NavLink></li>
           <li><NavLink to="/modalmulti">ModalMulti</NavLink></li>
+          <li><NavLink to="/tooltip">Tooltip</NavLink></li>
           <li><NavLink to="/cssmodule">CSSModule</NavLink></li>
           <li><NavLink to="/colorpage">Context ColorPage</NavLink></li>
         </ul>
