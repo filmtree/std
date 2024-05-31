@@ -45,7 +45,7 @@
 
 import React, { useEffect, useRef } from 'react';
 import styled from 'styled-components';
-import useOutsideClick from './UseOutsideClick';
+import useOutsideClick from '../../../lib/UseOutsideClick';
 
 const ModalContainer = styled.div`
   position: fixed;
@@ -111,6 +111,9 @@ const ModalLayout = ({ isOpen, closeModal, children }) => {
             }
           }
         }
+        if (event.key === 'Escape') {
+          closeModal();
+        }
       };
 
       document.addEventListener('keydown', handleKeyDown);
@@ -119,7 +122,7 @@ const ModalLayout = ({ isOpen, closeModal, children }) => {
         document.removeEventListener('keydown', handleKeyDown);
       };
     }
-  }, [isOpen]); // 의존성 배열에서 contentRef를 제거하고 isOpen만 남김
+  }, [isOpen, modalRef]); // 의존성 배열에서 contentRef를 제거하고 isOpen만 남김
 
   return isOpen ? (
     <ModalContainer>

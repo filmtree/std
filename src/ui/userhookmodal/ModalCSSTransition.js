@@ -1,5 +1,5 @@
 import React from 'react';
-import ModalLayout from './components/ModalFadeLayout';
+import ModalLayout from './components/ModalFadeTabCSSTransition';
 import useModal from '../../lib/UseModal';
 
 const Modal = () => {
@@ -9,7 +9,7 @@ const Modal = () => {
       <button onClick={openModal}>Modal Open Fade</button>
       <ModalLayout isOpen={isOpen} closeModal={closeModal}>
         <h2>Modal Title</h2>
-        <p>This is the content of the modal.</p>        
+        <p>CSSTransition Modal Fade</p>        
       </ModalLayout>
     </div>
   );

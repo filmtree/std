@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import styled, { keyframes, css } from 'styled-components';
-import useOutsideClick from './UseOutsideClick';
+import useOutsideClick from '../../../lib/UseOutsideClick';
 
 const fadeIn = keyframes`
   from {

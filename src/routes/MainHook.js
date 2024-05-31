@@ -8,12 +8,14 @@ import Location from "../pages/Location";
 import Profiles from "../pages/Profiles";
 import Profile from "../pages/Profile";
 import Modal from "../ui/userhookmodal/Modal";
-import ModalMulti from "../ui/userhookmodal/ModalMulti";
+import ModalTab from "../ui/userhookmodal/ModalFadeTab";
+import ModalMulti from "../ui/userhookmodal/ModalTabMulti";
+import ModalCSSTransition from "../ui/userhookmodal/ModalCSSTransition";
 import CSSModule from "../assets/css/CSSModule";
 import StyledComponent from "../components/10StyledComponent";
-import NotFound from "../routes/NotFound";
 import ColorPage from "../contexts/ColorPage";
 import Tooltip from "../ui/usetooltip/TooltipApp"
+import NotFound from "../routes/NotFound";
 
 const Main = () => {
   const routes = useRoutes([
@@ -56,8 +58,16 @@ const Main = () => {
       element: <Modal />
     },
     {
+      path: "/modaltab",
+      element: <ModalTab />
+    },
+    {
       path: "/modalmulti",
       element: <ModalMulti />
+    },
+    {
+      path: "/modalcsstransition",
+      element: <ModalCSSTransition />
     },
     {
       path: "/cssmodule",
